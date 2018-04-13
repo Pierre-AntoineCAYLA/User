@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Iterator;
+
 
 public class User {
 	//declaration de variable
@@ -62,9 +64,10 @@ public class User {
 	
 	//affiche le tableau
 	for(int i=0; i<users.size();i++) {
-	System.out.println(users.get(i));	
+	System.out.println(users.get(i));
 	}
 	
-	
-	}
+	Iterator<User> iter= users.iterator();
+	System.out.println(users);
+}
 }
